@@ -4,10 +4,6 @@ import OpenAI from "openai";
 
 dotenv.config();
 
-// Initialize OpenAI client directly with API key
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
 
 // Controller to generate Image
 export const generateImage = async (req, res, next) => {
